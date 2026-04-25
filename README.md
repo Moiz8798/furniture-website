@@ -67,6 +67,23 @@ http://localhost/ajmal-furniture-website
 
 <img width="948" height="421" alt="image" src="https://github.com/user-attachments/assets/7dae0c8a-7fc6-4e83-b29f-fe76e3ccdecd" />
 
+<img width="946" height="428" alt="image" src="https://github.com/user-attachments/assets/c30ef6f6-e959-4883-a7c1-0b10d332f807" />
+
+<img width="949" height="374" alt="image" src="https://github.com/user-attachments/assets/2293a799-33d3-4699-be60-06bf1ca4bb35" />
+
+
+<img width="946" height="432" alt="image" src="https://github.com/user-attachments/assets/31df8401-e61b-4964-b9dc-cf8464e72d94" />
+
+<img width="938" height="424" alt="image" src="https://github.com/user-attachments/assets/cf8c6903-4ebe-4bdc-9a49-552c744064fd" />
+
+<img width="944" height="433" alt="image" src="https://github.com/user-attachments/assets/0c4682e9-dd9c-42dd-8a6c-f01e311014a5" />
+
+<img width="939" height="440" alt="image" src="https://github.com/user-attachments/assets/3f6f7684-e412-46ec-a9f2-1e6baad7ad3c" />
+
+<img width="950" height="440" alt="image" src="https://github.com/user-attachments/assets/a8e17ca8-d55b-43dd-82a1-289282c3bdcb" />
+
+<img width="944" height="432" alt="image" src="https://github.com/user-attachments/assets/3aae7088-db54-4dbe-9e3e-167d53cc1d42" />
+
 ---
 
 ## 🤝 Contributing
@@ -75,12 +92,8 @@ Pull requests are welcome. For major changes, please open an issue first.
 
 ---
 
-## 📄 License
-
-MIT License
-
----
 
 ## 👨‍💻 Author
 
-Ajmal Furniture Website Project
+Abdul Moiz Khan
+Software Engineer

@@ -84,6 +84,20 @@ http://localhost/ajmal-furniture-website
 
 <img width="944" height="432" alt="image" src="https://github.com/user-attachments/assets/3aae7088-db54-4dbe-9e3e-167d53cc1d42" />
 
+
+## 📸 Admin Panel
+<img width="895" height="419" alt="image" src="https://github.com/user-attachments/assets/087f2112-14e2-4122-a009-47991d439809" />
+
+<img width="947" height="429" alt="image" src="https://github.com/user-attachments/assets/1e6886dc-7e89-4031-a791-2efbbda45eec" />
+
+<img width="944" height="423" alt="image" src="https://github.com/user-attachments/assets/8417f65f-0838-4838-b1ad-d0f503ec6765" />
+
+<img width="953" height="435" alt="image" src="https://github.com/user-attachments/assets/18808565-918a-4122-bea7-8288403b349f" />
+
+
+<img width="742" height="253" alt="image" src="https://github.com/user-attachments/assets/2a49f24e-8574-446d-b721-de89d65a4cca" />
+
+
 ---
 
 ## 🤝 Contributing

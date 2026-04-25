@@ -1,0 +1,241 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 0;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+/* Product Image */
+.product-picture {
+    flex: 1;
+    text-align: center;
+}
+.product-picture img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Product Info */
+.product-info {
+    flex: 1;
+}
+
+.container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+/* Product Details */
+.product-info .details {
+    margin-bottom: 20px;
+}
+.product-info .details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.product-info .details strong {
+    color: #333;
+}
+.product-info .details .price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+.product-info .details .original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+/* Success Message (Styled as a Badge) */
+.success-message {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Finish Options */
+.finish-options {
+    margin: 20px 0;
+}
+.finish-options h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.finish-options label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.finish-options input[type="radio"] {
+    margin-right: 5px;
+}
+.finish-options input[type="radio"]:checked {
+    accent-color: #333;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cart Count Badge (for Navbar) */
+.cart-count {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+/* Recommended Section */
+.recommended-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.recommended-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.recommended-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.recommended-product {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+.recommended-product a {
+    text-decoration: none;
+    color: inherit;
+}
+.recommended-product .label {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.recommended-product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    max-width: 250px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.recommended-product h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.recommended-product p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.recommended-product .price {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.recommended-product .original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.color-swatches {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+.color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    .product-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-picture img {
+        max-width: 100%;
+    }
+    .recommended-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .recommended-product img {
+        max-width: 100%;
+        height: 150px;
+    }
+}

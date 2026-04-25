@@ -1,0 +1,219 @@
+<?php
+
+include_once('connect.php');
+
+
+function getProducts() {
+    global $pdo;
+    
+    try {
+        
+        $stmt = $pdo->query("SELECT * FROM products where Category = 'table'");  
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);  
+        return $stmt->fetchAll();  
+    } catch (PDOException $e) {
+        return false;  
+    }
+}
+
+
+$products = getProducts();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Chairs</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> <!-- Added Font Awesome CDN -->
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <button class="menu-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="index2.html">Furniture</a>
+                <a href="index3.html">Rooms</a>
+                <a href="index4.html">Professionals</a>
+            </div>
+        </div>
+        <a href="../HtmlFiles/HomePage.php" style="text-decoration: none;color: inherit;">
+  <div class="logo">Ajmal Furniture</div>
+            </a>
+        <div class="nav-right">
+            <div class="search-wrapper">
+                <input class="search-transparent" type="text" placeholder="What can we help you find?"/>
+                <i class="fa fa-search search-icon"></i>
+            </div>
+            <div class="shopping-bag">
+                <a href="viewcart.php"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <strong>The Art of Living Danishly</strong>
+            <button onclick="toggleMenu()"><i class="fa fa-times"></i></button>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item" onclick="openSubMenu('furniture')">Furniture <i class="fa fa-chevron-right"></i></li>
+            <li class="menu-item" onclick="openSubMenu('collections')">Collections <i class="fa fa-chevron-right"></i></li>
+            <li class="menu-item">Outlet <i class="fa fa-chevron-right"></i></li>
+            <li class="menu-item" onclick="openSubMenu('rooms')">Rooms <i class="fa fa-chevron-right"></i></li>
+        </ul>
+    </div>
+
+    <!-- Submenu -->
+    <div class="submenu" id="submenu">
+        <div class="submenu-header">
+            <button onclick="closeSubMenu()"><i class="fa fa-chevron-left"></i> Back</button>
+        </div>
+        <h3 id="submenu-title"></h3>
+        <p id="submenu-description"></p>
+        <ul class="submenu-items" id="submenu-items"></ul>
+    </div>
+    <main>
+        <h1>Tables</h1>
+        <p class="subtitle">Discover table design collections</p>
+        
+        <div class="categories">
+            <div class="category" style="display: inline-block;">
+                <img src="./Coffetable.jpg" alt="Coffetable">
+                <p>Coffee Table</p>
+            </div>
+            <div class="category">
+                <img src="./Diningtable.jpg" alt="Diningtable">
+                <p>Dining table</p>
+            </div>
+            <div class="category">
+                <img src="./DeskTables.jpg" alt="DeskTables">
+                <p>Desk table</p>
+                </div>
+            <div class="category">
+                <img src="./Sidetable.jpg" alt="Sidetable">
+                <p >Side table</p> 
+            </div>
+    </div>
+    <div class="filters">
+        <button class="filter-btn">Filters</button>
+        <button>Colour</button>
+        <button>Material</button>
+        <button>Collection</button>
+        <button>Price</button>
+        
+        <span class="items">12 items</span>
+        <select>
+            <option>Relevance</option>
+        </select>
+    </div>
+    <div class="products">
+    <?php if ($products): ?>
+        <?php foreach ($products as $product): ?>
+            <div class="product">
+                <a href="addtocart.php?type=table&product_id=<?php echo htmlspecialchars($product['id']); ?>" class="product-image-link">
+                    <img src="<?php echo htmlspecialchars($product['Image']); ?>" alt="<?php echo htmlspecialchars($product['Name']); ?>">
+                </a>
+                <div class="product-info">
+                    <h3><?php echo htmlspecialchars($product['Name']); ?></h3>
+                    <p class="product-material"><?php echo htmlspecialchars($product['Material']); ?></p>
+                    <div class="price-info">
+                        <p class="price-label">Rec. retail price</p>
+                        <p class="main-price">Rs <?php echo number_format($product['Price']); ?></p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>No products found.</p>
+    <?php endif; ?>
+</div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+    <button class="load-more">Load More</button>
+    </main>
+    <>
+        <div class="footer-content">
+            <div class="intro">
+                <h2>Designer tables</h2>
+                <p>From a chat with an old friend to a glamourous gourmet night, our coffee tables, dining tables, side tables, night stands and desks do the job...</p>
+            </div>
+            
+            <div class="footer-sections">
+                <div class="section">
+                    <h3>Buy designer tables</h3>
+                    <p>An essential piece of furniture in any home, our range of tables will work hard in any room in your home. The heart of the home, your kitchen or dining room will be the envy of your friends with a dining table from our collection</p>
+                </div>
+                <div class="section">
+                    <h3>Different tables for every room in the house</h3>
+                    <p>From coffee tables to console tables, desks for the home office, bedside tables and dining tables. A table is a versatile piece of furniture that can often be used for several different things.</p>
+                </div>
+                <div class="section">
+                    <h3>Tables with different functions</h3>
+                    <p>When you need a table, it's not just about how it looks. It is important to think about the table's design, shape and functions. Different designs have different functions, so take care to consider which type of table suits you best.</p>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <ul class="footer-links">
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Find a store</a></li>
+                    <li><a href="#">About BoConcept</a></li>
+                    <li><a href="#">Press lounge</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="newsletter">
+                    <h2>Get our newsletter.</h2>
+                    <p>Get a front row seat to our collection launches and trends – directly to your inbox.</p>
+                    <button class="newsletter-btn">Sign up here. <span>→</span></button>
+                </div>
+                <div class="social-links">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon">FB</div>
+                        <div class="social-icon">IG</div>
+                        <div class="social-icon">X</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p>All prices are recommended retail prices in US Dollars ($) and exclude sales tax.</p>
+            </div>
+            <div class="footer-legal">
+                <a href="#">Cookie information</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="payment-options">
+                <div class="payment-icon">ApplePay</div>
+                <div class="payment-icon">Mastercard</div>
+                <div class="payment-icon">Visa</div>
+            </div>
+            <div class="country-selector">
+                <div class="flag">🇺🇸</div>
+                <span>United States</span>
+                <span>▼</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.section h3').forEach(header => {
+            header.addEventListener('click', () => {
+                const section = header.parentElement;
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmal Furniture | shop | project</title>
+    <link rel="stylesheet" href="../CSSFiles/Wstyle3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+          <button class="menu-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+          <div class="nav-links">
+            <a href="Windex2.html">Furniture</a>
+            <a href="Windex3.html">Rooms</a>
+            <a href="Windex4.html">Professionals</a>
+          </div>
+        </div>
+        <div class="logo">Ajmal Furniture</div>
+        <div class="nav-right">
+          <div class="search-wrapper">
+            <input class="search-transparent" type="text" placeholder="What can we help you find?"/>
+            <i class="fa fa-search search-icon"></i>
+          </div>
+          <div class="shopping-bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Side Menu -->
+      <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+          <strong>The Art of Living Danishly</strong>
+          <button onclick="toggleMenu()"><i class="fa fa-times"></i></button>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item" onclick="openSubMenu('furniture')">Furniture <i class="fa fa-chevron-right"></i></li>
+          <li class="menu-item" onclick="openSubMenu('collections')">Collections <i class="fa fa-chevron-right"></i></li>
+          <li class="menu-item">Outlet <i class="fa fa-chevron-right"></i></li>
+          <li class="menu-item" onclick="openSubMenu('rooms')">Rooms <i class="fa fa-chevron-right"></i></li>
+        </ul>
+      </div>
+    
+      <!-- Submenu -->
+      <div class="submenu" id="submenu">
+        <div class="submenu-header">
+          <button onclick="closeSubMenu()"><i class="fa fa-chevron-left"></i> Back</button>
+        </div>
+        <h3 id="submenu-title"></h3>
+        <p id="submenu-description"></p>
+        <ul class="submenu-items" id="submenu-items"></ul>
+      </div>
+
+    <div class="container">
+        <h1>Explore the look</h1>
+        
+        <div class="furniture-showcase">
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Room-image1.png" alt="Elegant cream colored sofa in a modern living room setting">
+                </div>
+                <div class="furniture-category">Living rooms</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Room-image2.jpg" alt="Modern wooden chair with armrests in a minimalist room">
+                </div>
+                <div class="furniture-category">Bed rooms</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Table-pro.jpg" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Dinning rooms</div>
+            </div>
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Bed-pro.png" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Small spaces</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Room-image3.jpg"Elegant storage furniture with decorative vase">
+                </div>
+                <div class="furniture-category">Home Offices</div>
+            </div>
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Outdoor-img.jpg">
+                </div>
+                <div class="furniture-category">Outdoor Spaces</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+
+    <section class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="../Images/Video-waseel-project.webm" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="arrow-down"></span>
+        </div>
+    </section>
+        
+
+    <div class="container">
+        <h3>Explore our Ajmal designs</h3>
+        
+        <div class="furniture-showcase">
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Outdoor-img.jpg" alt="Elegant cream colored sofa in a modern living room setting">
+                </div>
+                <div class="furniture-category">Outdoors</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Room-image2.jpg" alt="Modern wooden chair with armrests in a minimalist room">
+                </div>
+                <div class="furniture-category">Beds</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Tables-img.jpg" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Tables</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Chair-pro.jpg">
+                </div>
+                <div class="furniture-category">Chairs</div>
+            </div>
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Stg-img.jpg">
+                </div>
+                <div class="furniture-category">Storage</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/sofa-pro.png" alt="Elegant storage furniture with decorative vase">
+                </div>
+                <div class="furniture-category">Sofas</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+        
+        
+     <!-- Benefits Section -->
+     <section class="benefits">
+        <div class="container">
+            <h2>Get in touch</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>Easy one-stop solution</h3>
+                    <div class="benefit-content">
+                        <p>BoConcept offers a comprehensive range of furniture, lighting, and accessories - all from one source, making your project planning seamless and efficient.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <h3>Brand recognition</h3>
+                    <div class="benefit-content">
+                        <p>Leverage BoConcept's global reputation for Danish design excellence to add value and prestige to your projects.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <h3>Manufacturing control</h3>
+                    <div class="benefit-content">
+                        <p>Benefit from BoConcept's rigorous quality control standards and reliable production processes for consistent, high-quality results.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <h3>Customized solutions</h3>
+                    <div class="benefit-content">
+                        <p>Create unique spaces with BoConcept's extensive customization options, including fabrics, materials, and modular furniture configurations.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <h3>Sustainability credentials</h3>
+                    <div class="benefit-content">
+                        <p>Choose furniture with environmental responsibility in mind, supporting your green building initiatives and sustainability goals.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <h3>Bespoke interior design</h3>
+                    <div class="benefit-content">
+                        <p>Access professional design services to create tailored interior solutions perfectly aligned with your project vision and requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    
+
+    <!-- Promo Cards Section -->
+    <section class="promos">
+        <div class="promo-card">
+            <div>
+                <img src="../Images/free-fabric-samples.png" alt="Fabric samples" class="promo-img">
+                <h3 class="promo-title">Get free fabric samples</h3>
+            </div>
+        </div>
+        <div class="promo-card">
+            <div>
+                <img src="../Images/customer-support.png" alt="Customer service" class="promo-img">
+                <h3 class="promo-title">Need help? Let's talk.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <ul class="footer-links">
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Find a store</a></li>
+                    <li><a href="#">About BoConcept</a></li>
+                    <li><a href="#">Press lounge</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="newsletter">
+                    <h2>Get our newsletter.</h2>
+                    <p>Get a front row seat to our collection launches and trends – directly to your inbox.</p>
+                    <button class="newsletter-btn">Sign up here. <span>→</span></button>
+                </div>
+                <div class="social-links">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon">FB</div>
+                        <div class="social-icon">IG</div>
+                        <div class="social-icon">X</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p>All prices are recommended retail prices in US Dollars ($) and exclude sales tax.</p>
+            </div>
+            <div class="footer-legal">
+                <a href="#">Cookie information</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="payment-options">
+                <div class="payment-icon">ApplePay</div>
+                <div class="payment-icon">Mastercard</div>
+                <div class="payment-icon">Visa</div>
+            </div>
+            <div class="country-selector">
+                <div class="flag">🇺🇸</div>
+                <span>United States</span>
+                <span>▼</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JSFiles/Wmain.js"></script>
+    
+
+</body>
+</html>

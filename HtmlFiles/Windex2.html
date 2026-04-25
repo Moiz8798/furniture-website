@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmal Furniture | shop | project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../CSSFiles/Wstyle2.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+          <button class="menu-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+          <div class="nav-links">
+            <a href="Windex2.html">Furniture</a>
+            <a href="Windex3.html">Rooms</a>
+            <a href="Windex4.html">Professionals</a>
+          </div>
+        </div>
+        <div class="logo">Ajmal Furniture</div>
+        <div class="nav-right">
+          <div class="search-wrapper">
+            <input class="search-transparent" type="text" placeholder="What can we help you find?"/>
+            <i class="fa fa-search search-icon"></i>
+          </div>
+          <div class="shopping-bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Side Menu -->
+      <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+          <strong>The Art of Living Danishly</strong>
+          <button onclick="toggleMenu()"><i class="fa fa-times"></i></button>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item" onclick="openSubMenu('furniture')">Furniture <i class="fa fa-chevron-right"></i></li>
+          <li class="menu-item" onclick="openSubMenu('collections')">Collections <i class="fa fa-chevron-right"></i></li>
+          <li class="menu-item">Outlet <i class="fa fa-chevron-right"></i></li>
+          <li class="menu-item" onclick="openSubMenu('rooms')">Rooms <i class="fa fa-chevron-right"></i></li>
+        </ul>
+      </div>
+    
+      <!-- Submenu -->
+      <div class="submenu" id="submenu">
+        <div class="submenu-header">
+          <button onclick="closeSubMenu()"><i class="fa fa-chevron-left"></i> Back</button>
+        </div>
+        <h3 id="submenu-title"></h3>
+        <p id="submenu-description"></p>
+        <ul class="submenu-items" id="submenu-items"></ul>
+      </div>
+
+    <div class="container">
+        <h1>Design furniture</h1>
+        
+        <div class="furniture-showcase">
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src= "../Images/sofa-pro.png" alt="Elegant cream colored sofa in a modern living room setting">
+                </div>
+                <div class="furniture-category">Sofas</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Chair-pro.jpg"  alt="Modern wooden chair with armrests in a minimalist room">
+                </div>
+                <div class="furniture-category">Chairs</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Table-pro.jpg" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Tables</div>
+            </div>
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Bed-pro.png" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Beds</div>
+            </div>
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Outdoor-img.jpg" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Outdoor</div>
+            </div>
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/lamp-pro.jpg" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Lamps</div>
+            </div>
+
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Rugs-pro.jpg" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Rugs</div>
+            </div>
+
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Fac.png" alt="Contemporary dining table with modern chair in a tiled room">
+                </div>
+                <div class="furniture-category">Accesories</div>
+            </div>
+
+
+            
+            
+            
+            
+            <div class="furniture-item">
+                <div class="furniture-image">
+                    <img src="../Images/Stg-img.jpg" alt="Elegant storage furniture with decorative vase">
+                </div>
+                <div class="furniture-category">Storage</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+        
+        
+
+ 
+
+    <section class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <span class="tag">Bestseller</span>
+            <img src="../Images/Dining-table.png" alt="Kingston extendable dining table" class="product-image">
+            <div class="product-nav">
+                
+            </div>
+            <h3 class="product-title">Kingston extendable dining table</h3>
+            <div class="product-material">Lacquered</div>
+            <div class="color-options">
+                <div class="color-dot black"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$1,999.00 <span class="original-price">From $1,299.00</span></div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="../Images/Santiago.png" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Santiago dining table</h3>
+            <div class="product-material">Ceramic</div>
+            <div class="color-options">
+                <div class="color-dot black"></div>
+                <div class="color-dot white"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$6,099.00 <span class="original-price">From $2,999.00</span></div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="../Images/Coffee-table.png" alt="Santiago coffee table" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Santiago coffee table</h3>
+            <div class="product-material">Wood</div>
+            <div class="color-options">
+                <div class="color-dot black"></div>
+                <div class="color-dot grey"></div>
+                <div class="color-dot wood-dark"></div>
+                <span class="more-options">+ more options</span>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$1,299.00 <span class="original-price">From $799.00</span></div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="../Images/Light-brown-coffee-table.png" alt="Santiago extendable dining table" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Santiago extendable dining table</h3>
+            <div class="product-material">Wood</div>
+            <div class="color-options">
+                <div class="color-dot wood-dark"></div>
+                <div class="color-dot wood-light"></div>
+                <span class="more-options">+ more options</span>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$3,999.00</div>
+        </div>
+        
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="../Images/cabinet.png" alt="Wooden Storage Cabinet" class="product-image">
+            <div class="product-nav">
+                
+            </div>
+            <h3 class="product-title">Copenhagen storage cabinet</h3>
+            <div class="product-material">Wood</div>
+            <div class="color-options">
+                <div class="color-dot wood-light"></div>
+                <div class="color-dot wood-dark"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$2,499.00 <span class="original-price">From $1,899.00</span></div>
+        </div>
+        
+        <!-- Product 6 -->
+        <div class="product-card">
+            <span class="tag helena-pick">Helena's Pick</span>
+            <img src="../Images/silver-table.png" alt="Milano coffee table" class="product-image">
+            <div class="product-nav">
+              
+            </div>
+            <h3 class="product-title">Milano marble dining table</h3>
+            <div class="product-material">Marble</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$5,299.00 <span class="original-price">From $3,999.00</span></div>
+        </div>
+
+         <!-- Product 7 -->
+         <div class="product-card">
+            <img src="../Images/side-bar.png" class="product-image">
+            <div class="product-nav">
+              
+            </div>
+            <h3 class="product-title">Fermo sideboard</h3>
+            <div class="product-material">Marble</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$8,299.00 <span class="original-price">From $6,999.00</span></div>
+        </div>
+
+        
+         <!-- Product 8 -->
+         <div class="product-card">
+            <img src="../Images/como-shelf.png" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Como shelf</h3>
+            <div class="product-material">Metal</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$129.00 <span class="original-price">From $129.00</span></div>
+        </div>
+
+        
+         <!-- Product 9 -->
+         <div class="product-card">
+            <img src="../Images/V-shape-table.png" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Dinning Table</h3>
+            <div class="product-material">Ceramic</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$3129.00 <span class="original-price">From $2229.00</span></div>
+        </div>
+
+        
+         <!-- Product 10 -->
+         <div class="product-card">
+            <img src="../Images/imola-chair.png" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Imola chair</h3>
+            <div class="product-material">Leather-Metal</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$7160.00 <span class="original-price">From $3940.00</span></div>
+        </div>
+        
+        
+         <!-- Product 11 -->
+         <div class="product-card">
+            <img src="https://assets.boconcept.com/2743af69-27cc-47ed-9643-b21000c2d25b/2792997_PNG-Web%2072dpi.png?format=pjpg&auto=webp&fit=bounds&width=768&quality=75%2C60" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Photo-Art</h3>
+            <div class="product-material">Paper-Wood</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$500.00</div>
+        </div>
+
+        
+         <!-- Product 12 -->
+         <div class="product-card">
+            <img src="../Images/como-wall-system.png" class="product-image">
+            <div class="product-nav">
+               
+            </div>
+            <h3 class="product-title">Como wall system</h3>
+            <div class="product-material">Lacquered</div>
+            <div class="color-options">
+                <div class="color-dot white"></div>
+                <div class="color-dot grey"></div>
+            </div>
+            <div class="price-info">Rec. retail price</div>
+            <div class="current-price">$2750.00</div>
+        </div>
+        
+        
+        
+        
+    </section>
+
+     <!-- Video section -->
+    <section class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="../Images/Furniture-video-waseel.webm" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="arrow-down"></span>
+        </div>
+    </section>
+
+    <!-- Promo Cards Section -->
+    <section class="promos">
+        <div class="promo-card">
+            <div>
+                <img src="../Images/free-fabric-samples.png" alt="Fabric samples" class="promo-img">
+                <h3 class="promo-title">Get free fabric samples</h3>
+            </div>
+        </div>
+        <div class="promo-card">
+            <div>
+                <img src="../Images/customer-support.png" alt="Customer service" class="promo-img">
+                <h3 class="promo-title">Need help? Let's talk.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <ul class="footer-links">
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Find a store</a></li>
+                    <li><a href="#">About BoConcept</a></li>
+                    <li><a href="#">Press lounge</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="newsletter">
+                    <h2>Get our newsletter.</h2>
+                    <p>Get a front row seat to our collection launches and trends – directly to your inbox.</p>
+                    <button class="newsletter-btn">Sign up here. <span>→</span></button>
+                </div>
+                <div class="social-links">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon">FB</div>
+                        <div class="social-icon">IG</div>
+                        <div class="social-icon">X</div>
+                        <div class="social-icon">YT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p>All prices are recommended retail prices in US Dollars ($) and exclude sales tax.</p>
+            </div>
+            <div class="footer-legal">
+                <a href="#">Cookie information</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="payment-options">
+                <div class="payment-icon">ApplePay</div>
+                <div class="payment-icon">Mastercard</div>
+                <div class="payment-icon">Visa</div>
+            </div>
+            <div class="country-selector">
+                <div class="flag">🇺🇸</div>
+                <span>United States</span>
+                <span>▼</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JSFiles/Wmain.js"></script>
+    
+
+</body>
+</html>

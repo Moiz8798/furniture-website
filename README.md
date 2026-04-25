@@ -65,7 +65,7 @@ http://localhost/ajmal-furniture-website
 
 ## 📸 Screenshots
 
-(Add your website screenshots here)
+<img width="948" height="421" alt="image" src="https://github.com/user-attachments/assets/7dae0c8a-7fc6-4e83-b29f-fe76e3ccdecd" />
 
 ---
 

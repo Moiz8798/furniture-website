@@ -253,8 +253,8 @@ This project is licensed under the [MIT License](LICENSE) — free to use, modif
 **Abdul Moiz Khan**
 *Software Engineer*
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Moiz8798)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moiz-khan90?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 <br/>
 

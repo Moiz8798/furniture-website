@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=8B4513&center=true&vCenter=true&width=600&lines=🪑+Ajmal+Furniture;Modern+Furniture+Website;PHP+%7C+HTML+%7C+CSS+%7C+JavaScript" alt="Typing SVG" />
+# 🪑 Ajmal Furniture
+
+### 🛋️ Modern Furniture E-Commerce Website
 
 <br/>
 
@@ -59,9 +61,9 @@ Browse stylish furniture, manage a cart, and explore an admin panel — all in o
 
 ## 🖥️ Admin Panel Preview
 
-| Dashboard | Product Management |
+| Dashboard | Order Management |
 |---|---|
-| <img src="https://github.com/user-attachments/assets/087f2112-14e2-4122-a009-47991d439809" width="100%"/> | <img src="https://github.com/user-attachments/assets/1e6886dc-7e89-4031-a791-2efbbda45eee" width="100%"/> |
+| <img src="https://github.com/user-attachments/assets/087f2112-14e2-4122-a009-47991d439809" width="100%"/> | <img src="https://github.com/user-attachments/assets/8417f65f-0838-4838-b1ad-d0f503ec6765" width="100%"/> |
 
 | Order Management | User Management |
 |---|---|
